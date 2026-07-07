@@ -1,82 +1,12 @@
 <!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Protocolo Cloud</title>
-  <link rel="stylesheet" href="assets/style.css" />
-</head>
-<body>
-  <div class="app">
-    <aside class="sidebar">
-      <div class="brand">
-        <div class="logo">PC</div>
-        <div>
-          <h1>Protocolo Cloud</h1>
-          <p>Automatización documental notarial</p>
-        </div>
-      </div>
-      <nav>
-        <button class="active">Documento</button>
-        <button>Notarios</button>
-        <button>Procesamiento</button>
-        <button>Validación</button>
-        <button>Configuración</button>
-      </nav>
-      <div class="status">
-        <span></span> Conectado a Word
-      </div>
-    </aside>
-
-    <main class="content">
-      <header>
-        <div>
-          <h2>Documento activo</h2>
-          <p>Procese la escritura desde la posición del cursor.</p>
-        </div>
-        <button class="primary">Procesar desde cursor</button>
-      </header>
-
-      <section class="grid">
-        <article class="card wide">
-          <h3>Operaciones principales</h3>
-          <div class="actions">
-            <button>Limpiar saltos de línea</button>
-            <button>Convertir números a palabras</button>
-            <button>Detectar UF</button>
-            <button>Agregar texto final</button>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Notario activo</h3>
-          <label>Notario de planta</label>
-          <select>
-            <option>Ricardo Mauricio Salgado Sepúlveda</option>
-            <option>Agregar nuevo notario...</option>
-          </select>
-          <textarea>ante mí RICARDO MAURICIO SALGADO SEPÚLVEDA, Notario Público...</textarea>
-          <button class="secondary">Guardar texto</button>
-        </article>
-
-        <article class="card">
-          <h3>UF actualizada</h3>
-          <p class="value">Consultando...</p>
-          <p>Cuando se detecte una UF, el sistema preguntará si desea calcularla a pesos chilenos.</p>
-          <button class="secondary">Actualizar UF</button>
-        </article>
-
-        <article class="card wide">
-          <h3>Revisión automática</h3>
-          <ul class="checks">
-            <li>Campos pendientes: <strong>domicilio, personerías</strong></li>
-            <li>Números detectados: <strong>UF, pesos, RUT, fechas</strong></li>
-            <li>Texto final: <strong>opcional</strong></li>
-            <li>Alcance: <strong>desde cursor hacia abajo</strong></li>
-          </ul>
-        </article>
-      </section>
-    </main>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protocolo Cloud</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/App.jsx"></script>
+  </body>
 </html>

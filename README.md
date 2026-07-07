@@ -1,18 +1,36 @@
-# Protocolo Cloud Desktop V2
+# Protocolo Cloud 1.0
 
-Esta versión sí incluye HTML.
+Aplicación base profesional para automatización documental notarial.
 
-## Archivos principales
+## Qué incluye
 
-- `index.html`: interfaz elegante del programa.
-- `assets/style.css`: diseño visual.
-- `app/main.py`: abre la interfaz local.
-- `config/`: carpeta para notarios y textos guardados.
-- `docs/`: carpeta para documentación.
+- Interfaz elegante y corporativa en React + Vite.
+- Panel principal.
+- Módulo de procesamiento documental.
+- Módulo de notarios de planta y suplentes.
+- Textos automáticos por notario.
+- Configuración para publicar en Cloudflare Pages.
+- Función API de salud: `/api/health`.
+- Carpeta reservada para app Windows instalada.
 
-## Uso rápido
+## Publicar en Cloudflare Pages
 
-1. Abrir `index.html` para ver el diseño.
-2. Ejecutar `python app/main.py` para abrirlo como app local.
+Configuración recomendada:
 
-Esta base sirve para transformarla después en app instalada con Tauri o WebView.
+- Framework: Vite
+- Build command: `npm run build`
+- Output directory: `dist`
+- Root directory: `/`
+
+## Comandos locales
+
+```bash
+npm install
+npm run dev
+npm run build
+```
+
+## Importante
+
+La parte web vive en Cloudflare.  
+La conexión directa con Microsoft Word requiere una app instalada en Windows, que se construirá en la siguiente etapa.
